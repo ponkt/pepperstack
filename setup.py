@@ -23,13 +23,16 @@ setup(
     name='pepperstack',
     version='0.0.1',
     description='Pepperstack is a host inventory tool',
-    long_rescription=readme(),
+    long_drescription=readme(),
     author='Matthieu Rosinski',
     classifiers = [
         'Programming Language :: Python :: 2.7',
         ],
     packages = [
-        'pepperstack'
+        'pepperstack',
+        'pepperstack.commands',
+        'pepperstack.utils',
+        'pepperstack.models',
         ],
     install_requires=requirements(),
     )
